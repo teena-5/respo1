@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQBCQMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAACAwEAB//EABsQAQEBAQEBAQEAAAAAAAAAAAABAhExEiFB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDx1znA1ziB0KeshwHSHIyQ5AZIcdMlIDpC46Q5AGQuFI2ZAPlvypx3yAcdMnxvATsGxXjLAR4yxXg2AlYNivAsBOhYrYNgJWDVLBsBP+Mp2BQY5zgcxrAa5zgbxsZCkApCkZIcB0ikjJDkB0ORkhyA2QpHZhyAyThcbIUgDMt4cnHSAHHcU+WcAODYrwbASs4Fi1g2AlwbFLBsBGwbFbAsBLQWK2BQTsDilg2ADCogxzWA5rGwCkKRkKAUhwYcAopAkUgFIcgxSA3MORkhyA2RvGyFJEGTPW8OR3ADjuHx3AT+WWKcGxRKwbFbAoJWBYtYnYCVgVTUGwEbAqmoFgJ2DYdGgFGlRoMY1wMKMbPAKHBhZA4cGHkCypBnpwDkOQcnALKkHJxApCkZmKSAyQuN4XADjuHx3BU7BsUsGwRKhVdQKolQsU0GoCWk6rU9AnpPStToJ0KegoDQp0aAucwGtnjI2eAeTgQ4Bw4EOApk4EUgHFMpxTIHlTP4nlSIHDz6EPIpwuMnCBv8ZfHOvgBRp0LwA14nVLxOiBU9KUNKJUKppOgnQp0KCegp6CgNClRoC5zgZCgwoBwsgeaBz1SVOHAVypEsnAVyplLNOUFsnEs05QVh5SycqKrC6nK2UClbaLrQdQrbRtAaGitCiDpPR6qdUCho9J6AKnToaAKFp1OgNGlRoC5zgYUFs8A4WQh5A4pEocBWHlOHKCspypSnAVlOVKHPwFs0pU5Wy/qCspdS6X0B9daE0y6FK1loystB1oWttC1UZqp2ttHXoDqp2loNUBtClQtAbQtK0KA0aVG+gxznAJRjoBQ4nDlA5TynClBWHKlKcoKw5UpSlBaU5UZTlBaVsqUpd/AVlb1KUugfXWhK60C6y0estBtoWstZaDKNrrQoMtC1tG0BoUrQtBlCttG0GUa2sBjnOBzGuBsbKLYBw4nClBWFKnKUoKylKnKUoKylKlKUoK9KVLrZoFZW/SXWygp130H0zoH1nRtG6A7oLRtZ9A20LXWjaDrRtZaNoOtGutHoMtGtvo0GVzqwHOc4GNc4HNjnA2FGuBsKOcBQuucBQo5wE2OcDWucDmXxrgZGVzgEa5wMGucA/wBZXOAaFc4GDWOBznOBznOB/9k=);
+}
+#myh1{
+    font-size: 5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(162, 148, 148);
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 6px solid;
+    border-radius: 90px;
+    background-color: rgb(255, 255, 255);
+}
+#display{
+    font-size: 5rem;
+    font-weight: 200;
+    margin-bottom:50px;
+}
+#controls button{
+    font-size:2rem;
+    font-weight: bold;
+    padding:1rem;
+    border-radius: 1rem;
+    border-width:2px;
+    margin: 5px;
+    min-width:8rem;
+    border: none;
+    border-radius: 20;
+    cursor:pointer;
+    color: white;
+    transition: background-color 0.4s ease;
+}
+#start{
+    background-color:hsl(120, 58%, 51%);
+}
+#start:hover{
+    background-color:hsl(120, 58%, 30%);
+}
+#stop{
+    background-color:hsl(0, 70%, 46%);
+}
+#stop:hover{
+    background-color:hsl(0, 70%, 35%);
+}
+#lap {
+  background-color: #76b378; /* Green background */
+  color: white; /* White text */
+}
+#lap:hover {
+  background-color: #576058; /* Darker green on hover */
+}
+#laps li {
+  padding: 5px 10px;
+  border-bottom: 1px solid #eee;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  color: #333;
+}
+#reset{
+    background-color:hsl(220, 78%, 74%);
+}
+#reset:hover{
+    background-color:hsl(268, 69%, 56%);
+}
