@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Clothing E-Commerce</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e0e0e0; /* Matte background */
+    }
+    header, section, footer, nav {
+      background-color: white;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 1000px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .profile-icon {
+      position: absolute;
+      right: 20px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      max-height: 350px;
+    }
+    h1, h2 {
+      margin-top: 0;
+    }
+    /* Products grid */
+    .products-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .product-card {
+      flex: 1 1 calc(33% - 20px);
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      max-height: 250px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+    .product-name {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 6px;
+      color: #333;
+    }
+    .product-price {
+      color: #2e7d32;
+      font-weight: bold;
+      font-size: 1em;
+    }
+    /* Services grid */
+    .services-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .service-card {
+      flex: 1 1 calc(25% - 20px);
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .service-card img {
+      max-height: 150px;
+      width: auto;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+    /* Contact form */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      resize: vertical;
+    }
+    .contact-form button {
+      width: 120px;
+      padding: 10px;
+      font-size: 1em;
+      border: none;
+      border-radius: 6px;
+      background-color: #2e7d32;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .contact-form button:hover {
+      background-color: #1b4d23;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact Us</a>
+    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Profile" class="profile-icon" />
+  </nav>
+
+  <section id="home">
+    <h1>Welcome to Your Clothing Store</h1>
+    <p>Discover the latest styles and fashion trends tailored just for you.</p>
+    <img src="https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?cs=srgb&dl=pexels-bohlemedia-1884584.jpg&fm=jpg" alt="Clothing store homepage" />
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="http://www.globalrepublic.in/cdn/shop/files/GRWW2416444BLK__6_532a601e-41ff-4e32-b80c-e22397320d9f.webp?v=1730527497" alt="Women Elegance" />
+        <div class="product-name">Women Elegance</div>
+        <div class="product-price">₹3,499</div>
+      </div>
+      <div class="product-card">
+        <img src="http://blackberrys.com/cdn/shop/articles/Screenshot_2023-10-27_at_6.28.02_PM.png?v=1737526748&width=2048" alt="Mens Style" />
+        <div class="product-name">Mens Style</div>
+        <div class="product-price">₹4,999</div>
+      </div>
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/db/e6/4b/dbe64b8c4b1fedd0a1d9bc3840f63cc2.jpg" alt="Little Beauty" />
+        <div class="product-name">Little Beauty</div>
+        <div class="product-price">₹2,199</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/001/978/660/small_2x/customer-shopping-online-concept-free-vector.jpg" alt="Online Shopping" />
+        <div>Online Shopping</div>
+      </div>
+      <div class="service-card">
+        <img src="https://cdn.shopify.com/s/files/1/0675/1574/4551/files/8_offline_shopping_2048x2048.jpg?v=1677517967" alt="Offline Shopping" />
+        <div>Offline Shopping</div>
+      </div>
+      <div class="service-card">
+        <img src="https://www.shutterstock.com/image-vector/easy-returns-vector-logo-badge-260nw-1849011355.jpg" alt="Easy Returns" />
+        <div>Easy Returns</div>
+      </div>
+      <div class="service-card">
+        <img src="https://media.istockphoto.com/id/1074280094/photo/buying-souvenirs-in-italy.jpg?s=612x612&w=0&k=20&c=JrOd93oZGigHa6exnpbBzFTDe4u_l4-f_-XIX8b6lXc=" alt="Exchanges" />
+        <div>Exchanges</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Clothing Store. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
